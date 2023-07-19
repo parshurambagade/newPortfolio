@@ -1,0 +1,86 @@
+@import "../../../style.scss";
+
+#skills{
+    @include container;
+
+    .headings{
+        h5{}
+
+        h2{}
+    }
+
+    .my-skills{
+        color: $primary-text;
+        .frontend{
+            h4{
+                margin:1.5rem 0 1rem;
+                color:$light;
+            }
+            .skills{
+                display: flex;
+                flex-wrap: wrap;
+                gap:1rem;
+                .skill{
+                    border:1px solid transparent;
+                    border-radius: 0.5rem;
+                    padding:1rem;
+                    background: rgba(114, 168, 237, 0.3);
+                    transition: all 0.4s ease-in-out;
+
+                    &:hover{
+                        border:1px solid $primary-text;
+                        background:transparent;
+                    }
+                }
+            }
+        }
+    
+        .backend{
+            h4{
+                margin:1.5rem 0 1rem;
+                color:$light;
+            }
+            .skills{
+                display: flex;
+                flex-wrap: wrap;
+                gap:1rem;
+                .skill{
+                    border:1px solid transparent;
+                    border-radius: 0.5rem;
+                    padding:1rem;
+                    background: rgba(114, 168, 237, 0.3);
+                    transition: all 0.4s ease-in-out;
+
+                    &:hover{
+                        border:1px solid $primary-text;
+                        background:transparent;
+                    }
+                }
+            }
+        }
+
+        .languages{
+            h4{
+                margin:1.5rem 0 1rem;
+                color:$light;
+            }
+            .skills{
+                display: flex;
+                flex-wrap: wrap;
+                gap:1rem;
+                .skill{
+                    border:1px solid transparent;
+                    border-radius: 0.5rem;
+                    padding:1rem;
+                    background: rgba(114, 168, 237, 0.3);
+                    transition: all 0.4s ease-in-out;
+
+                    &:hover{
+                        border:1px solid $primary-text;
+                        background:transparent;
+                    }
+                }
+            }
+        }
+    }
+}
