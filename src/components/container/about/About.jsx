@@ -1,12 +1,9 @@
 import React from 'react'
 import "./about.scss";
-import me from "../../../img/parshu.jpg"
+import me from "../../../img/parshu.jpg";
 
 const About = () => {
   
-  const styles={
-    color:"black"
-  }
     return (
         <section id="about">
           <div className='headings'>

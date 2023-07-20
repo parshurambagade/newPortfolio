@@ -7,9 +7,25 @@
        flex-direction: column;
        margin: 5rem 2rem;
     }
+
+    @include mobile{
+        flex-direction: column;
+    }
+    @include small-mobile{
+        flex-direction: column;
+    }
+
     .home-div{
         width:40%;
         @include tablet{
+            position: static;
+            width:100%;
+        }
+        @include mobile{
+            position: static;
+            width:100%;
+        }
+        @include small-mobile{
             position: static;
             width:100%;
         }
@@ -20,6 +36,14 @@
 
 
         @include tablet{
+            position: static;
+            width:100%;
+        }
+        @include mobile{
+            position: static;
+            width:100%;
+        }
+        @include small-mobile{
             position: static;
             width:100%;
         }

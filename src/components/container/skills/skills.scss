@@ -23,20 +23,19 @@
             }
             
             h4{
-                padding-top:1rem;
+                padding-top:.8rem;
                 
                 @include tablet{
                     min-width:30%;
                 }
+             
             }
             .skills{
                 display: flex;
                 flex-wrap: wrap;
                 gap:1rem;
 
-                @include tablet{
                 
-                }
                 .skill{
                     @include btn;
                     border:1px solid transparent;

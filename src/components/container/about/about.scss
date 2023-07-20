@@ -3,10 +3,11 @@
 #about{
 //    border:1px solid white;
 //    padding:5rem 5rem 5rem 1rem;
-width:100%;
-   font-size: 1.7rem;
-   color:$light;
-    
+    width:100%;
+    font-size: 1.7rem;
+    color:$light;
+
+
     .headings{
         margin: 2rem;
         display: none;
@@ -14,6 +15,14 @@ width:100%;
         @include tablet{
             display: block;
         }
+        @include mobile{
+            display: block;
+        }
+        @include small-mobile{
+            display: block;
+        }
+
+       
     }
     .about-container{
         display: flex;
@@ -28,6 +37,19 @@ width:100%;
             @include tablet{
                 display: block;
             }
+
+            @include mobile{
+                display: block;
+                width:18rem;
+                height:18rem;
+                margin-bottom:3rem;
+            }
+            @include small-mobile{
+                display: block;
+                width:15rem;
+                height:15rem;
+                margin-bottom:3rem;
+            }
             img{
                 height:100%;
                 width:100%;
@@ -39,9 +61,18 @@ width:100%;
         
         .about-text{
             line-height: 2.4rem;
+
             @include tablet{
                 text-align: justify;
                 line-height: 2.4rem;
+            }
+            @include mobile{
+                text-align: justify;
+                line-height: 2.4rem;
+            }
+            @include small-mobile{
+                line-height: 2.4rem;
+                text-align: justify;
             }
             p{
                 span{
