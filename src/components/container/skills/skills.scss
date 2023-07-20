@@ -2,7 +2,7 @@
 
 #skills{
     @include container;
-
+    margin-top:7rem;
     .headings{
         h5{}
 
@@ -11,19 +11,37 @@
 
     .my-skills{
         color: $primary-text;
+        @include tablet{
+            margin-top:3rem;
+        }
         .frontend{
+
+            @include tablet{
+                display: flex;
+                margin-bottom: 3rem;
+                align-items: baseline;
+            }
+            
             h4{
-                margin:1.5rem 0 1rem;
-                color:$light;
+                padding-top:1rem;
+                
+                @include tablet{
+                    min-width:30%;
+                }
             }
             .skills{
                 display: flex;
                 flex-wrap: wrap;
                 gap:1rem;
+
+                @include tablet{
+                
+                }
                 .skill{
+                    @include btn;
                     border:1px solid transparent;
                     border-radius: 0.5rem;
-                    padding:1rem;
+                    color:$primary-text;
                     background: rgba(114, 168, 237, 0.3);
                     transition: all 0.4s ease-in-out;
 
@@ -36,18 +54,26 @@
         }
     
         .backend{
+
+            @include tablet{
+                display: flex;
+                margin-bottom: 3rem;
+                align-items: baseline;
+            }
             h4{
-                margin:1.5rem 0 1rem;
-                color:$light;
+                @include tablet{
+                    min-width:30%;
+                }
             }
             .skills{
                 display: flex;
                 flex-wrap: wrap;
                 gap:1rem;
                 .skill{
+                    @include btn;
                     border:1px solid transparent;
+                    color:$primary-text;
                     border-radius: 0.5rem;
-                    padding:1rem;
                     background: rgba(114, 168, 237, 0.3);
                     transition: all 0.4s ease-in-out;
 
@@ -55,29 +81,45 @@
                         border:1px solid $primary-text;
                         background:transparent;
                     }
+
+                    @include tablet{
+                        height:max-content;
+                    }
                 }
             }
         }
 
         .languages{
+
+            @include tablet{
+                display: flex;
+                align-items: baseline;
+            }
             h4{
-                margin:1.5rem 0 1rem;
-                color:$light;
+                @include tablet{
+                    width:30%;
+                    text-wrap: wrap;
+                }
             }
             .skills{
                 display: flex;
                 flex-wrap: wrap;
                 gap:1rem;
                 .skill{
+                    @include btn;
                     border:1px solid transparent;
+                    color:$primary-text;
                     border-radius: 0.5rem;
-                    padding:1rem;
                     background: rgba(114, 168, 237, 0.3);
                     transition: all 0.4s ease-in-out;
 
                     &:hover{
                         border:1px solid $primary-text;
                         background:transparent;
+                    }
+
+                    @include tablet{
+                        height:max-content;
                     }
                 }
             }

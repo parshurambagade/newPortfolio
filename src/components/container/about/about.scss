@@ -1,0 +1,56 @@
+@import "../../../style.scss";
+
+#about{
+//    border:1px solid white;
+//    padding:5rem 5rem 5rem 1rem;
+width:100%;
+   font-size: 1.7rem;
+   color:$light;
+    
+    .headings{
+        margin: 2rem;
+        display: none;
+
+        @include tablet{
+            display: block;
+        }
+    }
+    .about-container{
+        display: flex;
+        flex-direction: column;
+
+        .about-image{
+            height:20rem;
+            width:20rem;
+            margin: 2rem auto;
+            display: none;
+
+            @include tablet{
+                display: block;
+            }
+            img{
+                height:100%;
+                width:100%;
+                object-fit: cover;
+                border-radius: 50%;
+                border:5px solid $white;
+            }
+        }
+        
+        .about-text{
+            line-height: 2.4rem;
+            @include tablet{
+                text-align: justify;
+                line-height: 2.4rem;
+            }
+            p{
+                span{
+                    color:$primary-text;
+                }
+            }
+        }
+    }
+}
+
+
+

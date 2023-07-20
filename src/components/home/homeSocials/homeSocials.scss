@@ -1,0 +1,19 @@
+@import "../../../style.scss";
+
+.header-socials{
+    display: flex;
+    gap:7rem;
+    // justify-content: space-between;
+    font-size: 2rem;
+    padding:1rem 0;
+    @include tablet{
+        justify-content: space-evenly;
+    }
+
+    a{
+        color:$primary-text;
+        &:hover{
+            color:$primary;
+        }
+    }
+}

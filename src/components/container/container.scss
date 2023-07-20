@@ -1,0 +1,21 @@
+@import '../../style.scss';
+
+#container{
+    margin:0;
+    padding:6rem 5rem;
+    // border:1px solid blue;
+    height:max-content;
+    position: absolute;
+    top:0;
+    right:0;
+
+    width:60%;
+
+    @include tablet{
+        position: static;
+        width:100%;
+        justify-content: center;
+        padding:3rem 2.5rem;
+    }
+
+}

@@ -1,0 +1,27 @@
+@import "../../style.scss";
+
+#main{ 
+    display: flex;
+
+    @include tablet{
+       flex-direction: column;
+       margin: 5rem 2rem;
+    }
+    .home-div{
+        width:40%;
+        @include tablet{
+            position: static;
+            width:100%;
+        }
+    }
+
+    .container-div{
+        width:60%;
+
+
+        @include tablet{
+            position: static;
+            width:100%;
+        }
+    }
+}

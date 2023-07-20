@@ -1,0 +1,79 @@
+@import "../../style.scss";
+
+#home{
+    @include container;
+    @include flex;
+    justify-content: space-between;
+    padding:8rem 0 5rem 5rem;
+    margin:0;
+    height:100vh;
+    position: fixed;
+    top:0;
+    left:0;
+    width:40%;
+    @include tablet{
+        position: static;
+        width:100%;
+        height:max-content;
+        padding:3rem 2.5rem 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .content-container{
+        // border:1px solid white;
+        width:100%;
+
+        @include tablet{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        .heading-text{
+            color: $white;
+            h5{
+                font-size: 2rem;
+                color:$light;
+            }
+
+            h2{
+                font-size: 3.8rem;
+                color: $primary;
+                margin:.5rem 0 1rem;
+            }
+
+            .roles{
+                font-size: 2rem;
+                
+                #heading-1{
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .socials{
+        // border:1px solid white;
+        margin-top:2rem;
+        align-self: flex-start;
+        width:max-content;
+        @include tablet{
+            width:100%;
+            align-self: center;
+        }
+    }
+    .cta-container{
+        margin-top:2rem;
+        width:100%;
+        display: flex;
+        justify-content: flex-start;
+
+        @include tablet{
+            justify-content: center;
+        }
+
+    }
+}
