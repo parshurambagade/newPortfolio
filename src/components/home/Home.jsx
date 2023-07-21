@@ -3,6 +3,7 @@ import { Typewriter } from 'react-simple-typewriter'
 import CTA from './cta/CTA'
 import HomeSocials from './homeSocials/HomeSocials'
 import "./home.scss"
+
 const Home = () => {
   return (
     <section id="home">
@@ -26,18 +27,20 @@ const Home = () => {
         </div>
       </div>
 
-
       {/*CTA goes here*/}
       <div className="cta-container">
         <CTA />
       </div>  
     </div>
-      
-      {/*Navbar section*/}
-      {/* <div className="nav-container">
-        <Nav />
-      </div> */}
 
+    {/* NAVBAR SECTION */}
+    <div className="navbar">
+        <div className="nav-links">
+          <a href="#about"><span className='nav-line'></span><span>About</span></a>
+          <a href="#projects"><span className='nav-line'></span><span>Projects</span></a>
+          <a href="#skills"><span className='nav-line'></span><span>Skills</span></a>
+        </div>
+      </div>
 
       {/*Socials go here*/}
       <div className="socials">

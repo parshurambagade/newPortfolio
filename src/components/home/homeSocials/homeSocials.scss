@@ -9,10 +9,19 @@
 
     @include tablet{
         justify-content: space-evenly;
+        margin:2rem 2rem 3rem;
     }
-    
+    @include mobile{
+        justify-content: space-evenly;
+        width:50%;
+        flex-wrap: wrap;
+        margin:auto;
+    }
     @include small-mobile{
         justify-content: space-evenly;
+        width:50%;
+        flex-wrap: wrap;
+        margin:auto;
     }
 
     a{

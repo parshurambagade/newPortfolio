@@ -1,11 +1,11 @@
 import React from 'react'
 import "./style.scss";
-import Main from './components/main/Main';
+import Container from './components/container/Container';
 
 
 const App = () => {
   return (
-    <Main />
+    <Container />
   )
 }
 

@@ -11,10 +11,17 @@
     @include tablet{
         width:80%;
         gap:6rem;
+        margin:2rem;
+    }
+    @include mobile{
+        width:100%;
+        justify-content: space-evenly;
     }
     @include small-mobile{
-        width:80%;
-        gap:4rem;
+        width:100%;
+        flex-direction: column;
+        gap:1.5rem;
+        margin-bottom:4rem;
     }
 
     .resume{
@@ -30,6 +37,13 @@
             background:$primary-text;
             color:$background;
         }
+
+        @include mobile{
+            width:100%;
+        }
+        @include small-mobile{
+            width:100%;
+        }
     }
     .contact{
         @include btn;
@@ -43,6 +57,13 @@
         &:hover{
             border:1px solid $primary-text;
             background:$primary-text;
+        }
+
+        @include mobile{
+            width: 100%;
+        }
+        @include small-mobile{
+            width:100%;
         }
     }
 }

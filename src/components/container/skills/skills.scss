@@ -3,6 +3,10 @@
 #skills{
     @include container;
     margin-top:7rem;
+
+    @include tablet{
+        margin-top:9rem;
+    }
     .headings{
         h5{}
 

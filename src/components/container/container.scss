@@ -11,11 +11,22 @@
 
     width:60%;
 
+    @include desktop{
+        padding-top:9rem;
+    }
+
     @include tablet{
         position: static;
         width:100%;
         justify-content: center;
-        padding:3rem 2.5rem;
+        padding:3rem 4rem;
+    }
+
+    @include mobile{
+        position: static;
+        width:100%;
+        justify-content: center;
+        padding:3rem 2rem;
     }
 
     @include small-mobile{

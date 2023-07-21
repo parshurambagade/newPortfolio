@@ -1,13 +1,12 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
 import "./cta.scss"
-
+import resume from "../../../img/Resume.pdf"
 
 const CTA = () => {
   return (
     <div className='cta'>
-        <a href="https://drive.google.com/file/d/1AouKKD_Paqwmx2jnN0exTTymSGWTfVNC/view?usp=sharing" target="_blank" className='resume' download id="downloadCv">Download CV</a>
-        <a href='#' className='contact' id="letsTalk">Let's Talk</a>
+        <a href={resume} className='resume' download id="downloadCv">Download CV</a>
+        <a href='mailto:parshurambagade855@gmail.com' className='contact' id="letsTalk">Let's Talk</a>
     </div>
   )
 }

@@ -152,7 +152,7 @@
                     flex-wrap: wrap;
                     
                     @include tablet{
-                        justify-content: baseline;
+                        justify-content: flex-start;
                         gap:1rem;
                     }
 
