@@ -1,5 +1,8 @@
 import React from 'react'
 import './projects.scss'
+import friendBookImg from "../../../img/friendBookImg.png";
+import portfolioImg from "../../../img/portfolioImg.png";
+import snakeGameImg from "../../../img/snakeGameImg.png";
 
 const Projects = () => {
   return (
@@ -10,17 +13,25 @@ const Projects = () => {
         </div>
 
         <div className="projects-container">
+            {/* 1st project */}
             <div className="project">
                 <div className="project-image">
-                    <img src="https://i.ibb.co/0jZ3qYH/1.png" alt="project" />
+                    <img src={friendBookImg} alt="project" />
                     <div className="project-links">
-                        <div className="project-link github">GitHub</div>
-                        <div className="project-link live">Live</div>
+                        <a className="project-link github" href="https://github.com/parshurambagade/social" target='_blank'>GitHub</a>
+                        <a className="project-link live" disabled>Live</a>
+                        
                     </div>
                 </div>
                 <div className="project-info">
-                    <h4 className="heading3">FriendBook</h4>
-                    <div className='project-desc'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam iste possimus laborum cupiditate quo? Quae porro a optio inventore similique laudantium rerum vel, error reiciendis illo magnam praesentium odit. Dignissimos?</div>
+                    <h4>FriendBook - <span>Social Media Website</span></h4>
+                    <div className='project-desc'>
+                        <ul>
+                            <li>Used React Query to fetch user data and posts from API</li>
+                            <li>Used JSON Web Token (JWT) and Cookies for authentication</li>
+                            <li>Used React Context API for implementing dark mode functionality</li>
+                        </ul>
+                    </div>
                     <div className="tech-stack">
                         <div className="stack">ReactJS</div>
                         <div className="stack">Node.js</div>
@@ -29,6 +40,64 @@ const Projects = () => {
                         <div className="stack">JavaScript</div>
                         <div className="stack">CSS</div>
                         <div className="stack">HTML</div>
+                    </div>
+                </div>
+            </div>
+
+            {/* 2nd project */}
+            <div className="project">
+                <div className="project-image">
+                    <img src={portfolioImg} alt="project" />
+                    <div className="project-links">
+                    <a className="project-link github" href="https://github.com/parshurambagade/portfolio" target='_blank'>GitHub</a>
+                        <a className="project-link live" href='https://parshu-portfolio.web.app/' target='_blank'>Live</a>
+                    </div>
+                </div>
+                <div className="project-info">
+                    <h4>Portfolio - Personal Portfolio Website</h4>
+                    <div className='project-desc'>
+                        <ul>
+                            <li>A personal portfolio website built using ReactJS</li>
+                            <li>Showcases frontend skills</li>
+                            <li>Deployed on firebase hosting</li>
+                            <li>Used Scss for styling</li>
+                        </ul>
+                    </div>
+                    <div className="tech-stack">
+                        <div className="stack">ReactJS</div>
+                        <div className="stack">Scss</div>
+                        <div className="stack">Firebase</div>
+                        <div className="stack">JavaScript</div>
+                        <div className="stack">CSS</div>
+                        <div className="stack">HTML</div>
+                    </div>
+                </div>
+            </div>
+
+            {/* 3rd project */}
+            <div className="project">
+                <div className="project-image">
+                    <img src={snakeGameImg} alt="project" />
+                    <div className="project-links">
+                    <a className="project-link github" href="https://github.com/parshurambagade/snake-game" target='_blank'>GitHub</a>
+                        <a className="project-link live" href='http://mrparshu.me/snake-game/' target='_blank'>Live</a>
+                    </div>
+                </div>
+                <div className="project-info">
+                    <h4>Snake Game</h4>
+                    <div className='project-desc'>
+                        <ul>
+                            <li>Built a simple Snake Game using Vanilla JavaScript
+                            </li>
+                            <li>Added sound effects and animations for better user experience</li>
+                            <li>Deployed on Github hosting</li>
+                        </ul>
+                    </div>
+                    <div className="tech-stack">
+                        <div className="stack">JavaScript</div>
+                        <div className="stack">CSS</div>
+                        <div className="stack">HTML</div>
+                        <div className="stack">GitHub</div>
                     </div>
                 </div>
             </div>
