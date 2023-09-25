@@ -69,14 +69,17 @@
                 text-align: justify;
                 line-height: 2.4rem;
                 font-size: 1.8rem;
+                margin-top:2rem;
             }
             @include mobile{
                 text-align: justify;
                 line-height: 2.4rem;
+                font-size: 1.5rem;
             }
             @include small-mobile{
                 line-height: 2.4rem;
                 text-align: justify;
+                font-size: 1.5rem;
             }
             p{
                 span{

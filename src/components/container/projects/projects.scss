@@ -56,13 +56,28 @@
 
                 @include mobile{
                     width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
                 }
                 @include small-mobile{
                     width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
                 }
                 img{
                     width:90%;
                     object-fit: cover;
+
+                    @include mobile{
+                        width:100%;
+                        margin:1rem 0; 
+                    }
+                    @include small-mobile{
+                        width:100%;
+                        margin:1rem 0;
+                    }
                 }
                 .project-links{
                     display: flex;
@@ -140,6 +155,13 @@
                     @include tablet{
                         font-size: 1.5rem;
                     }
+
+                    @include mobile{
+                        font-size: 1.3rem;
+                    }
+                    @include small-mobile{
+                        font-size: 1.3rem;
+                    }
                     ul{
                         list-style-type: square;
                         padding-left: 2rem;
@@ -160,10 +182,12 @@
                     @include mobile{
                         justify-content: flex-start;
                         gap:1rem;
+                        font-size: 1.2rem;
                     }
                     @include small-mobile{
                         justify-content: flex-start;
                         gap:1rem;
+                        font-size: 1.2rem;
                     }
             
                     .stack{

@@ -20,6 +20,7 @@
         width:100%;
         justify-content: center;
         padding:3rem 4rem;
+        margin-bottom: 10rem;
     }
 
     @include mobile{
@@ -27,6 +28,7 @@
         width:100%;
         justify-content: center;
         padding:3rem 2rem;
+        margin-bottom: 10rem;
     }
 
     @include small-mobile{
@@ -34,6 +36,7 @@
         width:100%;
         justify-content: center;
         padding:3rem 2rem;
+        margin-bottom: 10rem;
     }
 
 }

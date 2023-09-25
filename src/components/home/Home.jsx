@@ -3,8 +3,12 @@ import { Typewriter } from 'react-simple-typewriter'
 import CTA from './cta/CTA'
 import HomeSocials from './homeSocials/HomeSocials'
 import "./home.scss"
+import {useState} from 'react';
 
 const Home = () => {
+
+  const [activeNav, setActiveNav] = useState("#about");
+
   return (
     <section id="home">
     <div className='content-container'>
@@ -36,9 +40,9 @@ const Home = () => {
     {/* NAVBAR SECTION */}
     <div className="navbar">
         <div className="nav-links">
-          <a href="#about"><span className='nav-line'></span><span>About</span></a>
-          <a href="#projects"><span className='nav-line'></span><span>Projects</span></a>
-          <a href="#skills"><span className='nav-line'></span><span>Skills</span></a>
+          <a href="#about" onClick={()=>setActiveNav("#about")} className={activeNav === '#about' ? 'active' : ''}><span className='nav-line'></span><span>About</span></a>
+          <a href="#skills" onClick={()=>setActiveNav("#skills")} className={activeNav === '#skills' ? 'active' : ''}><span className='nav-line'></span><span>Skills</span></a>
+          <a href="#projects" onClick={()=>setActiveNav("#projects")} className={activeNav === '#projects' ? 'active' : ''}><span className='nav-line'></span><span>Projects</span></a>
         </div>
       </div>
 

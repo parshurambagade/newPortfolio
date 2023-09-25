@@ -4,9 +4,8 @@ import friendBookImg from "../../../img/friendBookImg.png";
 import portfolioImg from "../../../img/portfolioImg.png";
 import snakeGameImg from "../../../img/snakeGameImg.png";
 import keepNoteImg from "../../../img/keepNoteImg.png";
-import blogImg from "../../../img/blogImg.png";
 
-const Projects = () => {
+const ProjectsPage = () => {
   return (
     <div id='projects'>
         <div className='headings'>
@@ -131,38 +130,10 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
-
-            {/* 5th project */}
-            <div className="project">
-                <div className="project-image">
-                    <img src={blogImg} alt="project" />
-                    <div className="project-links">
-                    <a className="project-link github" href="https://github.com/parshurambagade/blog" target='_blank'>GitHub</a>
-                        <a className="project-link live" href='http://139.59.72.114:3000/' target='_blank'>Live</a>
-                    </div>
-                </div>
-                <div className="project-info">
-                    <h4>Personal Blog</h4>
-                    <div className='project-desc'>
-                        <ul>
-                            <li>Built a personal blog application using pure backend technologies.
-                            </li>
-                            <li>Implemented user authentication and authorization feature using jsonwebtoken (JWT)</li>
-                            <li>Deployed on digital ocean</li>
-                        </ul>
-                    </div>
-                    <div className="tech-stack">
-                        <div className="stack">Node.js</div>
-                        <div className="stack">Express.js</div>
-                        <div className="stack">EJS</div>
-                        <div className="stack">JavaScript</div>
-                    </div>
-                </div>
-            </div>
         </div>
 
     </div>
   )
 }
 
-export default Projects
+export default ProjectsPage
