@@ -13,19 +13,28 @@
     }
     @include mobile{
         justify-content: space-evenly;
-        width:50%;
+        width:60%;
         flex-wrap: wrap;
         margin:auto;
     }
     @include small-mobile{
         justify-content: space-evenly;
-        width:50%;
+        width:60%;
         flex-wrap: wrap;
         margin:auto;
     }
-
+    
     a{
         color:$primary-text;
+        
+        @include mobile{
+            font-size: 3rem;
+
+        }
+        @include small-mobile{
+            font-size: 3rem;
+
+        }
         &:hover{
             color:$primary;
         }

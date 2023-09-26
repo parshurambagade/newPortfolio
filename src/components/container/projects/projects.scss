@@ -88,6 +88,15 @@
                     text-align: center;
                     z-index: 1;
 
+                    @include mobile{
+                        width:100%;
+                        justify-content: space-between;
+                    }
+                    @include small-mobile{
+                        width:100%;
+                        justify-content: space-between;
+                    }
+
                     .project-link.live{
                             @include btn;
                             color: $primary;
@@ -98,6 +107,12 @@
                             border-color: transparent;
                             background:$primary-text;
                             color:$background;
+                            @include mobile{
+                                padding:1rem;
+                            }
+                            @include small-mobile{
+                                padding:1rem;
+                            }
             
                     }
                     .project-link.github{
@@ -116,6 +131,12 @@
                             border:1px solid $primary-text;
                             color:$primary-text;
                             background:transparent;
+                        }
+                        @include mobile{
+                            padding:1rem;
+                        }
+                        @include small-mobile{
+                            padding:1rem;
                         }
                     }
                 }
