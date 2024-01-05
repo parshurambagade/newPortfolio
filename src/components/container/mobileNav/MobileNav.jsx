@@ -10,6 +10,7 @@ import {useState} from 'react';
 const MobileNav = () => {
 
   const [activeNav, setActiveNav] = useState("#home");
+
   return (
     <>
     <nav>
@@ -18,6 +19,7 @@ const MobileNav = () => {
         <a href="#about" onClick={()=>setActiveNav("#about")} className={activeNav === "#about" ? "active" : ""}><AiOutlineUser/></a>
         <a href="#skills" onClick={()=>setActiveNav("#skills")} className={activeNav === "#skills" ? "active" : ""}><MdComputer/></a>
         <a href="#projects" onClick={()=>setActiveNav("#projects")} className={activeNav === "#projects" ? "active" : ""}><CgMenuGridO/></a>
+      
       </div>
     </nav>
     </>

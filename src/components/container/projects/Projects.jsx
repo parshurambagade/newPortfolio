@@ -138,7 +138,7 @@ const Projects = () => {
                     <img src={blogImg} alt="project" />
                     <div className="project-links">
                     <a className="project-link github" href="https://github.com/parshurambagade/blog" target='_blank'>GitHub</a>
-                        <a className="project-link live" href='http://139.59.72.114:3000/' target='_blank'>Live</a>
+                        <a className="project-link live" href='https://blog-whhz.onrender.com/' target='_blank'>Live</a>
                     </div>
                 </div>
                 <div className="project-info">
