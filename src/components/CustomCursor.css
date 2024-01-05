@@ -1,0 +1,17 @@
+/* CustomCursor.css */
+.custom-cursor {
+    width: 300px;
+    height: 300px;
+    border: 1px solid transparent;
+    /* background: linear-gradient(120deg, #013c7e, rgb(92, 171, 255), #021934); */
+    background: linear-gradient(135deg, white,  #021934);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    opacity: .5;
+    transform: translate(-50%, -50%);
+    mix-blend-mode:overlay; 
+    /* backdrop-filter: blur(1rem); */
+    z-index: 9999;
+  }
+  

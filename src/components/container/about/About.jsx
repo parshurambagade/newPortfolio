@@ -1,21 +1,21 @@
 import React from 'react'
-import "./about.scss";
+// import "./about.scss";
 import me from "../../../img/parshu.jpg";
 
 const About = () => {
 
   return (
-    <section id="about">
-      <div className='headings'>
-        <h5 className='heading2'>Know more</h5>
-        <h2 className='heading1'>About me</h2>
+    <section id="about" className='my-36 pr-20  '>
+      <div className='headings font-bold text-center my-8 '>
+        <h5 className='heading2 text-2xl'>Know more</h5>
+        <h2 className='heading1 text-4xl text-blue-400'>About me</h2>
       </div>
       <div className='about-container'>
-        <div className='about-image'>
+        <div className='about-image hidden'>
           <img src={me} alt="Parshuram Bagade" />
         </div>
 
-        <div className='about-text' >
+        <div className='about-text text-[25px] ' >
           <p>Hello, I'm <span>Parshuram Bagade</span>, a driven self-taught <span>Full Stack Developer</span> hailing from Sangli, Maharashtra. My journey into web development began with a specialization in <span>ReactJS</span>, and I've since broadened my skill set to encompass an array of technologies.</p>
           <br />
           <p>I recently graduated with a BCA degree in 2023 and am currently pursuing my MCA through online mode at <span>Uttaranchal University, Dehradun</span>. This academic pursuit has provided me with a solid foundation in computer science, which I apply to my development work.</p>

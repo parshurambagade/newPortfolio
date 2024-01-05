@@ -1,5 +1,5 @@
 import React from 'react'
-import "./style.scss";
+import "./index.css";
 import Container from './components/container/Container';
 import {
   createBrowserRouter,

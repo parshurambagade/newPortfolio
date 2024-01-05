@@ -4,7 +4,7 @@ import Me from '../../img/parshu.jpg';
 // import {FiUsers} from "react-icons/fi";
 // import {VscFolderLibrary} from "react-icons/vsc";
 import HomeSocials from "../home/homeSocials/HomeSocials"
-import "./about.scss";
+// import "./about.scss";
 
 const AboutMe = () => {
   return (

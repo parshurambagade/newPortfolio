@@ -1,5 +1,5 @@
 import React from 'react'
-import './projects.scss'
+// import './projects.scss'
 import friendBookImg from "../../../img/friendBookImg.png";
 import portfolioImg from "../../../img/portfolioImg.png";
 import snakeGameImg from "../../../img/snakeGameImg.png";

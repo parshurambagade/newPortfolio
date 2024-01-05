@@ -1,5 +1,5 @@
 import React from 'react';
-import './mobileNav.scss';
+// import './mobileNav.scss';
 import {AiOutlineHome} from 'react-icons/ai';
 import {AiOutlineUser} from 'react-icons/ai';
 import {MdComputer} from 'react-icons/md';
