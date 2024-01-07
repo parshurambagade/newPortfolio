@@ -1,18 +1,16 @@
-import React from 'react'
-// import "./container.scss"
-import About from './about/About'
-import Skills from './skills/Skills'
-import Projects from './projects/Projects'
-import Home from '../home/Home'
-import MobileNav from './mobileNav/MobileNav'
-import CustomCursor from '../CustomCursor'
+
+import About from './About'
+import Skills from './Skills'
+import Projects from './Projects'
+import Home from './Home'
+import MobileNav from './MobileNav'
+
 
 const Container = () => {
   return (
-    <div className="flex bg-[#021934] bg-gradient-to-r from-black from-10% via-sky-950 via-40% to-slate-950 to-90%  text-slate-400">
-      <CustomCursor />
+    <div className="flex bg-gradient-to-r from-[#021934] from-10% via-black via-40% to-[#021934] to-90%  text-slate-400"> 
     <div className="hidden">  
-      <MobileNav /> 
+      <MobileNav />   
     </div>
     <div id="home" className='w-2/5 flex z-10'>
       <Home />

@@ -1,11 +1,9 @@
-import React from 'react'
-// import "./about.scss";
-import me from "../../../img/parshu.jpg";
+import me from "../assets/img/parshu.jpg";
 
 const About = () => {
 
-  return (
-    <section id="about" className='my-36 pr-20  '>
+  return (  
+    <section id="about" className='pt-20 pr-20  '>
       <div className='headings font-bold text-center my-8 '>
         <h5 className='heading2 text-2xl'>Know more</h5>
         <h2 className='heading1 text-4xl text-blue-400'>About me</h2>

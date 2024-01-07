@@ -1,7 +1,7 @@
 import React from 'react'
 import { Typewriter } from 'react-simple-typewriter'
-import CTA from './cta/CTA'
-import HomeSocials from './homeSocials/HomeSocials'
+import CTA from './CTA'
+import HomeSocials from './HomeSocials'
 // import "./home.scss"
 import {useState} from 'react';
 
