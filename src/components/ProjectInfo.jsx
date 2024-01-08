@@ -9,7 +9,7 @@ const ProjectInfo = ({
 }) => {
   // console.log();
   return (
-    <div className="flex w-full p-4 rounded-xl  hover:p-8 transition duration-400  hover:bg-[#162034ce]  gap-8 my-4">
+    <div className="flex w-full rounded-xl  p-8 transition duration-400  hover:bg-[#162034ce]  gap-8 my-4">
       <div className="w-[25%] ">
         <img src={img}  alt="project" className="rounded-t-lg" />
         <div className="flex justify-between my-2 gap-2   ">
@@ -31,7 +31,7 @@ const ProjectInfo = ({
       </div>
       <div className="w-[75%] h-full">
         <h4 className="text-2xl text-white font-bold">
-          {title} - <span>{subtitle}</span>
+          {title} - <span className="text-gray-400">{subtitle}</span>
         </h4> 
         <div className="p-4 py-2 ">
           <ul className="list-disc text-[1.4rem] leading-16">

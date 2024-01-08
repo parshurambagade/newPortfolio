@@ -1,43 +1,25 @@
-
 const skillsData = {
-    frontend: [
-        {
-            name: "ReactJS",
-            icon: "FaReact"
-        },
-        {
-            name: "Tailwind CSS",
-            icon: "https://icons8.com/icon/122637/react"
-        },
-        {
-            name: "Sass",
-            icon: "https://icons8.com/icon/122637/react"
-        },
-        {
-            name: "BootStrap",
-            icon: "https://icons8.com/icon/122637/react"
-        },
-        {
-            name: "Redux Toolkit",
-            icon: "https://icons8.com/icon/122637/react"
-        },
-        {
-            name: "JavaScript",
-            icon: "https://icons8.com/icon/122637/react"
-        },
-        {
-            name: "JavaScript",
-            icon: "https://icons8.com/icon/122637/react"
-        },
-        {
-            name: "HTMl",
-            icon: "https://icons8.com/icon/122637/react"
-        },
-        {
-            name: "CSS",
-            icon: "https://icons8.com/icon/122637/react"
-        }
-    ]
-}
+  frontend: [
+    "ReactJS",
+    "Tailwind CSS",
+    "Sass",
+    "BootStrap",
+    "Redux Toolkit",
+    "JavaScript",
+    "HTML",
+    "CSS",
+  ],
+  backend: ["Node.js", "Express.js", "MongoDB", "MySQL", "Rest API"],
+  tools: [
+    "VS Code",
+    "Git and GitHub",
+    "Postman",
+    "Chrome DevTools",
+    "Firebase",
+    "Linux",
+    "NPM",
+    "Jest ( Testing F/W )",
+  ],
+};
 
 export default skillsData;
