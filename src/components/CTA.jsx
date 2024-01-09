@@ -5,9 +5,9 @@ const resume = "https://bit.ly/parshuram-resume";
 
 const CTA = () => {
   return (
-    <div className='flex  gap-10'>
-        <a href={resume} id="downloadCv" className='border border-blue-400 p-4 rounded-lg text-blue-400 text-xl hover:bg-blue-300 transition duration-500 hover:text-slate-900'>Download CV</a>
-        <a href='mailto:parshuram.bagade@outlook.com' className='bg-blue-400 p-4 rounded-lg text-slate-900 text-xl hover:bg-blue-300 transition duration-100' id="letsTalk">Let's Talk</a>
+    <div className='xs:flex lg:flex lg:gap-10 xl:flex xl:gap-10 xs:w-full xs:flex-wrap   xs:gap-4 xl:w-full'>
+        <a href={resume} id="downloadCv" className='xs:p-2 xs:text-sm xs:w-full lg:w-max xl:w-max border border-blue-400 lg:p-4 xl:p-4 rounded-lg text-blue-400 lg:text-xl hover:bg-blue-300 transition duration-500 hover:text-slate-900'>Download CV</a>
+        <a href='mailto:parshuram.bagade@outlook.com' className='xs:p-2 xs:text-sm xs:w-full lg:w-max xl:w-max bg-blue-400 lg:p-4 xl:p-4 rounded-lg text-slate-900 lg:text-xl hover:bg-blue-300 transition duration-100' id="letsTalk">Let's Talk</a>
     </div>
   )
 }

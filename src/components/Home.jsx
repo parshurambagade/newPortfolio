@@ -1,23 +1,20 @@
-import React from 'react'
 import { Typewriter } from 'react-simple-typewriter'
 import CTA from './CTA'
 import HomeSocials from './HomeSocials'
-// import "./home.scss"
 import {useState} from 'react';
-import { Link } from 'react-router-dom';
 
 const Home = () => {
 
   const [activeNav, setActiveNav] = useState("#about");
 
   return (
-    <section id="home" className="fixed flex flex-col   h-full  justify-center ml-20 gap-28">
+    <section id="home" className="xs:text-center lg:text-left xl:text-left xs:pt-48 xl:pt-28 xs:h-[100vh] xs:w-[100vw] xs:flex xs:flex-wrap lg:fixed xl:fixed xl:flex xl:flex-col xl:h-full lg:flex lg:flex-col  lg:h-full xs:justify-center lg:ml-20 xl:ml-20 lg:gap-28 xl:gap-28">
     <div className='flex flex-col gap-7'>
       <div className="font-bold flex gap-4 flex-col">
-        <h5 className="text-3xl">Hey👋 I am</h5>
-        <h2 className="text-6xl text-blue-400" >Parshuram Bagade</h2>
+        <h5 className="xs:text-xl lg:text-3xl xl:text-3xl">Hey👋 I am</h5>
+        <h2 className="xs:text-3xl lg:text-6xl xl:text-6xl text-blue-400" >Parshuram Bagade</h2>
         <div className='roles'>
-          <span id="heading-1" className="text-3xl text-white" >
+          <span id="heading-1" className="xs:text-xl lg:text-3xl xl:text-3xl text-white" >
             <Typewriter
               words={['Fullstack Developer', 'JavaScript Developer', 'Freelance Web Developer', 'ReactJS Developer', 'MERN Developer']}
               loop={true}
@@ -33,7 +30,7 @@ const Home = () => {
       </div>
 
       {/*CTA goes here*/}
-      <div className="my-6">
+      <div className="xs:my-2 my-6">
         <CTA />
       </div>  
     </div>  
