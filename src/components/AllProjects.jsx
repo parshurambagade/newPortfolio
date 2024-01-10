@@ -1,37 +1,66 @@
 import { IoMdArrowRoundBack } from "react-icons/io";
-import { Link } from 'react-router-dom';
-import projects from "../assets/projects"
+import { FiArrowUpRight } from "react-icons/fi";
+import { Link } from "react-router-dom";
+import projects from "../assets/projects";
 
 const AllProjects = () => {
   return (
-    <div className="bg-gradient-to-r from-[#021934] from-10% via-black via-40% to-[#021934] to-90% h-[100vh] p-32  text-slate-400">
-        <Link to="/" className='text-blue-400 font-bold text-xl hover:text-blue-200 flex items-center gap-2'><span><IoMdArrowRoundBack /></span> <span>Home</span></Link>
-        <h1 className="text-3xl my-4 text-white font-bold">All Projects</h1>
+    <div className="xs:min-h-[100vh] xs:w-[100vw] xs:py-12 xs:px-6 bg-gradient-to-r from-[#021934] from-10% via-black via-40% to-[#021934] to-90% h-[100vh] p-32  text-slate-400">
+      <Link
+        to="/"
+        className="xs:text-sm xs:gap-1 text-blue-400 font-bold text-sm  hover:text-blue-200 flex items-center gap-1 "
+      >
+        <span>
+          <IoMdArrowRoundBack />
+        </span>{" "}
+        <span>Home</span>
+      </Link>
+      <h1 className="xs:text-lg text-3xl my-4 text-white font-bold">
+        All Projects
+      </h1>
 
-        <table className="border-separate border-spacing-x-2 border-spacing-y-12 pl-0  w-[90vw] text-lg">
-            <thead className="text-left border-b w-full">
-                <tr className="text-teal-100 border-b w-full font-extralight">
-                <th>Name</th>
-                <th>Type</th>   
-                <th className="w-[30%]">Built with</th>
-                <th>GitHub</th>
-                <th>Live</th>
-                </tr>    
-            </thead>
-            <tbody className="w-full">
-                {projects.data.map(project => (
-                    <tr key={project.id} className="border-b w-full">
-                        <td  className="w-[7%] text-teal-100">{project.title}</td>
-                        <td className="w-[7%]">{project.type}</td>
-                        <td className="flex flex-wrap gap-2 w-[100%]">{project.techstack.map((tech,i) => (<span key={i} className="border border-blue-500 bg-sky-950 text-sky-200 px-2 py-1 text-sm rounded-lg">{tech}</span>))}</td>
-                        <td className="w-[20%] text-wrap"><a href={project.codeUrl}>{project.codeUrl}</a></td>
-                        <td className="w-[20%] text-wrap"><a href={project.liveUrl ? project.liveUrl : "/"}>{project.liveUrl ? project.liveUrl : "-"}</a></td>
-                    </tr>
+      <div className="xs:text-sm flex flex-col w-full">
+        <div className="flex text-left border-b text-teal-100 border-slate-700 py-6 w-full">
+          <div className="xs:w-[30%]  w-[10%]">Name</div>
+          <div className="xs:w-[20%] xs:px-2 w-[10%]">Type</div>
+          <div className="xs:hidden w-[30%]">Built with</div>
+          <div className="xs:hidden w-[25%]">GitHub</div>
+          <div className="xs:hidden  w-[25%]">Live</div>
+          <div className="xs:flex xs:w-[50%] px-8 hidden ">Links</div>
+        </div>
+        <div className="w-full">
+          {projects.data.map((project) => (
+            <div key={project.id} className="flex border-slate-700 py-8  border-b w-full">
+              <div className="xs:w-[30%] w-[10%]  text-teal-100">{project.title}</div>
+              <div className="xs:w-[20%] xs:px-2 w-[10%]">{project.type}</div>
+              <div className="xs:hidden flex flex-wrap gap-2 w-[30%]">
+                {project.techstack.map((tech, i) => (
+                  <span
+                    key={i}
+                    className="border border-blue-500 bg-sky-950 text-sky-200 px-2 py-1 text-xs rounded-lg"
+                  >
+                    {tech}
+                  </span>
                 ))}
-            </tbody>
-        </table>    
+              </div>
+              <div className="xs:hidden xs:text-wrap w-[25%] text-wrap">
+                <a href={project.codeUrl}>{project.codeUrl}</a>
+              </div>
+              <div className="xs:hidden w-[25%] text-wrap">
+                <a href={project.liveUrl ? project.liveUrl : "/"}>
+                  {project.liveUrl ? project.liveUrl : "-"}
+                </a>
+              </div>
+              <div className="xs:flex gap-8 px-8 xs:w-[50%] hidden" >
+              <a href={project.codeUrl} className="flex justify-center items-center"><span>GitHub</span><span><FiArrowUpRight /></span> </a>
+              <a href={project.liveUrl ? project.liveUrl : "/"} className="flex justify-center items-center"><span>Live</span><span><FiArrowUpRight /></span>  </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default AllProjects  
+export default AllProjects;
