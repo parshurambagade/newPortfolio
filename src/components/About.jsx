@@ -1,19 +1,18 @@
 import me from "../assets/img/parshu.jpg";
 
 const About = () => {
-
   return (  
-    <section id="about" className='xs:py-12 xs:px-0 pt-28 pr-20'>
+    <section id="about" className='xs:py-12 xs:px-0 md:pt-20 md:pb-0 lg:w-full pr-20'>
       <div className='xs:text-center headings font-bold text-center my-8 '>
-        <h5 className='heading2 xs:text-lg text-2xl'>Know more</h5>
-        <h2 className='heading1 xs:text-3xl text-4xl text-blue-400'>About me</h2>
+        <h5 className='heading2 xs:text-lg md:text-xl text-2xl'>Know more</h5>
+        <h2 className='heading1 xs:text-3xl md:text-4xl text-4xl text-blue-400'>About me</h2>
       </div>
       <div className='about-container'>
         <div className='about-image hidden'>
           <img src={me} alt="Parshuram Bagade" />
         </div>
 
-        <div className='about-text xs:text-base xs:text-justify xs:tracking-normal text-[25px] tracking-wider' >
+        <div className='about-text xs:text-base xs:text-justify xs:tracking-normal sm:text-lg md:text-xl text-[25px] tracking-wider' >
           <p>Hello, I'm <span className="text-white">Parshuram Bagade</span>, a driven self-taught <span className="text-white">Fronend Developer</span> hailing from Sangli, Maharashtra. My journey into web development began with a specialization in <span className="text-white">ReactJS</span>, and I've since broadened my skill set to encompass an array of technologies.</p>
           <br />
           <p>I recently graduated with a BCA degree in 2023 and am currently pursuing my MCA through online mode at <span className="text-white">Uttaranchal University, Dehradun</span>. This academic pursuit has provided me with a solid foundation in computer science, which I apply to my development work.</p>

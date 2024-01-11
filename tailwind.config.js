@@ -7,16 +7,14 @@ export default {
   theme: {
     extend: {}, 
     screens: {
-      'xs': {'min': '300px', 'max': '479px'},
+      // 'xs': {'min': '300px', 'max': '479px'},
+      'xs': '320px',
       
-      'sm': {'min': '480px', 'max': '767px'},
+      'sm': '480px',
 
+      'md': '768px',
 
-      'md': {'min': '768px', 'max': '1023px'},
-  
-
-      'lg': {'min': '1024px', 'max': '1279px'},
-
+      'lg': '1024px',
 
       'xl': '1280px',
 
