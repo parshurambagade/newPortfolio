@@ -1,9 +1,27 @@
 import portfolioImg from "../assets/img/portfolioImg.png";
 import friendBookImg from "../assets/img/friendBookImg.png";
+import speedyEatsImg from "../assets/img/speedy-eats.png";
 const Projects = {
     "data": [
       {
         "id": 1,
+        "title": "Speedy-Eats",
+        "subtitle": "Food Delivery Web App",
+        "img": speedyEatsImg,
+        "type": "Frontend",
+        "desc": [
+          "Created a responsive ReactJS app, mimicking Swiggy's functionality.",
+          "Implemented Tailwind CSS for a modern UI.",
+          "Used Redux Toolkit for 'Add to Cart' feature.",
+          "Integrated Shimmer UI and search feature."
+        ],
+        "codeUrl": "https://github.com/parshurambagade/speedy-eats",
+        "techstack": [
+          "ReactJS", "Tailwind CSS", "Redux Toolkit", "HTML", "JavaScript", "CSS"
+        ]
+      },
+      {
+        "id": 2,
         "title": "FriendBook",
         "subtitle": "Social Media Website",
         "img": friendBookImg,
@@ -19,7 +37,7 @@ const Projects = {
         ]
       },
       {
-        "id": 2,
+        "id": 3,
         "title": "Portfolio",
         "subtitle": "Personal Portfolio Website",
         "img": portfolioImg ,
