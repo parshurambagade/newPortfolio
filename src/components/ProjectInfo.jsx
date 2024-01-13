@@ -27,7 +27,7 @@ const ProjectInfo = ({
           <img src={img} alt="project" className="rounded-t-lg" />
           <div className="xs:my-1 sm:my-2 flex justify-between my-2 gap-2   ">
             <a
-              className="xs:text-xs xs:py-1 xs:px-4 sm:py-2 sm:text-sm md:text-xs  text-center py-2 px-8 text-lg text-blue-400 border border-blue-400 rounded-bl-lg w-2/4 hover:bg-blue-300 hover:text-slate-800"
+              className="xs:text-xs xs:py-2 xs:px-4 sm:py-2 sm:text-sm md:text-xs  text-center py-2 px-8 text-lg text-blue-400 border border-blue-400 rounded-bl-lg w-2/4 hover:bg-blue-300 hover:text-slate-800"
               href={codeUrl}
               target="_blank"
               rel="noreferrer"
@@ -35,7 +35,7 @@ const ProjectInfo = ({
               GitHub
             </a>
             <a
-              className="xs:text-xs xs:py-1 xs:px-4 sm:py-2 sm:text-sm md:text-xs py-2 px-8 w-2/4 border text-lg border-blue-400 bg-blue-400 text-sky-950 rounded-br-lg  text-center hover:bg-sky-300"
+              className="xs:text-xs xs:py-2 xs:px-4 sm:py-2 sm:text-sm md:text-xs py-2 px-8 w-2/4 border text-lg border-blue-400 bg-blue-400 text-sky-950 rounded-br-lg  text-center hover:bg-sky-300"
               href={liveUrl}
             >
               Live
@@ -44,7 +44,7 @@ const ProjectInfo = ({
         </div>
         <div className="xs:w-full xs:my-2 md:w-[70%] md:my-0 h-full">
           <div className="p-4 py-2 md:py-0 xl:px-6 xl:py-2  ">
-            <ul className="list-disc xs:text-sm xs:text-justify sm:text-base md:text-base md:flex md:flex-col md:gap-3 lg:text-sm lg:gap-2 xl:text-base xl:gap-4 xl:tracking-widest leading-16">
+            <ul className="list-disc xs:text-sm xs:text-justify sm:text-base md:text-base md:flex md:flex-col md:gap-3 lg:gap-2 xl:text-lg xl:gap-4 xl:tracking-wider leading-16">
               {desc &&
                 desc.map((point, i) => (
                   <li key={i} className="xs:my-2 md:my-0 ">
@@ -62,7 +62,7 @@ const ProjectInfo = ({
             techstack.map((tech, i) => (
               <div
                 key={i}
-                className="xs:text-xs xs:bg-sky-950 xs:text-slate-100 sm:text-xs border md:text-xs border-gray-500 bg-transparent px-2 py-1 rounded-lg"
+                className="xs:text-xs xs:bg-sky-950 xs:text-slate-100 sm:text-xs border md:text-xs xl:text-sm border-gray-500 bg-transparent px-2 py-1 rounded-lg"
               >
                 {tech}
               </div>

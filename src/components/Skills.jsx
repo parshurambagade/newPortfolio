@@ -14,17 +14,17 @@ const Skills = () => {
   return (
     <div id="skills" className="xs:mx-0 xs:py-8 xs:h-max md:pt-20 md:pb-0 lg:pt-24 mr-20 pt-28">
       <div className="font-bold text-center my-8 ">
-        <h2 className="xs:text-3xl  md:text-4xl text-blue-400">My Skills</h2>
+        <h2 className="xs:text-3xl  md:text-4xl lg:text-3xl text-blue-400">My Skills</h2>
       </div>
 
       {/* SKILLS SECTION FOR LARGE DEVICES */}
       <div className="xs:hidden skills-section lg:flex flex-col justify-between w-full h-max mb-8">
         <div className="frontend w-full mb-6">
           <h3 className="text-2xl font-bold my-8">Frontend</h3>
-          <div className="flex flex-wrap h-full justify-between  gap-8">
+          <div className="flex flex-wrap h-full justify-normal  gap-12 xl:gap-8">
         {skillsData.frontend && skillsData.frontend.map((skill,i) => {
               return (
-                <div key={i} className="lg:w-[22%] lg:px-4 lg:py-8 lg:gap-4 lg:justify-evenly  lg:flex flex flex-col border border-blue-400 p-8  rounded-lg justify-center items-center bg-transparent  shadow-md shadow-blue-300  gap-2 hover:shadow-blue-300  hover:shadow-lg transition duration-200"><span className="lg:text-5xl">{skill == "ReactJS" ? <FaReact /> : skill == "Tailwind CSS" ? <SiTailwindcss /> : skill == "Redux Toolkit" ? <SiRedux /> : skill == "Sass" ? <FaSass /> : skill == "BootStrap" ? <SiBootstrap /> : skill == "JavaScript" ? <SiJavascript /> : skill == "HTML" ? <FaHtml5 /> : skill == "CSS" ? <SiCss3 /> : "" }</span><span className="text-xl font-normal">{skill}</span></div>
+                <div key={i} className="lg:w-[27%] lg:text-center lg:px-4 lg:py-8 lg:gap-4 lg:justify-evenly  lg:flex xl:w-[20%] xl:py-4 flex flex-col border border-blue-400 p-8  rounded-lg justify-center items-center bg-transparent  shadow-md shadow-blue-300  gap-2 hover:shadow-blue-300  hover:shadow-lg transition duration-200"><span className="lg:text-5xl">{skill == "ReactJS" ? <FaReact /> : skill == "Tailwind CSS" ? <SiTailwindcss /> : skill == "Redux Toolkit" ? <SiRedux /> : skill == "Sass" ? <FaSass /> : skill == "BootStrap" ? <SiBootstrap /> : skill == "JavaScript" ? <SiJavascript /> : skill == "HTML" ? <FaHtml5 /> : skill == "CSS" ? <SiCss3 /> : "" }</span><span className="text-lg font-normal">{skill}</span></div>
               )  
             })}
             </div>
@@ -32,10 +32,10 @@ const Skills = () => {
 
         <div className="backend w-full mb-6">
           <h3 className="text-2xl font-bold my-8">Backend</h3>
-          <div className="flex flex-wrap justify-between h-full gap-8">
+          <div className="flex flex-wrap justify-normal h-full gap-12 xl:gap-8">
           {skillsData.backend && skillsData.backend.map((skill,i) => {
             return (
-              <div key={i} className="lg:w-[22%] lg:px-4  lg:py-8 lg:justify-evenly  lg:gap-4 flex flex-col border border-blue-400 p-8  rounded-lg justify-center items-center bg-transparent  shadow-md shadow-blue-300  gap-2 hover:shadow-blue-300  hover:shadow-lg transition duration-200"><span className="lg:text-5xl">{skill == "Node.js" ? <FaNode /> : skill == "Express.js" ? <SiExpress /> : skill == "MongoDB" ? <SiMongodb /> : skill == "MySQL" ? <SiMysql /> : skill == "Rest API" ? <TbApi /> : "" }</span><span className=" font-normal text-xl">{skill}</span></div>
+              <div key={i} className="lg:w-[27%] lg:text-center lg:px-4  lg:py-8 lg:justify-evenly  lg:gap-4 xl:w-[20%] xl:py-4 flex flex-col border border-blue-400 p-8  rounded-lg justify-center items-center bg-transparent  shadow-md shadow-blue-300  gap-2 hover:shadow-blue-300  hover:shadow-lg transition duration-200"><span className="lg:text-5xl">{skill == "Node.js" ? <FaNode /> : skill == "Express.js" ? <SiExpress /> : skill == "MongoDB" ? <SiMongodb /> : skill == "MySQL" ? <SiMysql /> : skill == "Rest API" ? <TbApi /> : "" }</span><span className=" font-normal text-lg">{skill}</span></div>
             )  
           })}
           </div>
@@ -43,10 +43,10 @@ const Skills = () => {
 
         <div className="tools w-full mb-6">
           <h3 className="text-2xl font-bold my-8">Other Tools</h3>
-          <div className="flex flex-wrap justify-between h-full gap-8 ">
+          <div className="lg:justify-normal flex flex-wrap  h-full gap-12  xl:gap-8">
           {skillsData.tools && skillsData.tools.map((skill,i) => {
             return (
-              <div key={i} className="lg:w-[22%] lg:px-4 lg:py-8   lg:justify-evenly  lg:gap-4 flex flex-col border border-blue-400 p-8  rounded-lg justify-center items-center bg-transparent  shadow-md shadow-blue-300  gap-2 hover:shadow-blue-300  hover:shadow-lg transition duration-200"><span className="lg:text-5xl">{skill == "VS Code" ? <SiVisualstudiocode /> : skill == "Git and GitHub" ? <FaGithub /> : skill == "Postman" ? <SiPostman /> : skill == "Chrome DevTools" ? <FaChrome /> : skill == "Firebase" ? <SiFirebase /> : skill == "Linux" ? <FaLinux /> : skill == "NPM" ? <SiNpm /> : skill.startsWith("Jest") ? <SiJest /> : ""}</span><span className="text-xl font-normal">{skill}</span></div>
+              <div key={i} className="lg:w-[27%] lg:text-center lg:px-4 lg:py-8   lg:justify-evenly  lg:gap-4 xl:w-[20%] xl:py-4 flex flex-col border border-blue-400 p-8  rounded-lg justify-center items-center bg-transparent  shadow-md shadow-blue-300  gap-2 hover:shadow-blue-300  hover:shadow-lg transition duration-200"><span className="lg:text-5xl">{skill == "VS Code" ? <SiVisualstudiocode /> : skill == "Git and GitHub" ? <FaGithub /> : skill == "Postman" ? <SiPostman /> : skill == "Chrome DevTools" ? <FaChrome /> : skill == "Firebase" ? <SiFirebase /> : skill == "Linux" ? <FaLinux /> : skill == "NPM" ? <SiNpm /> : skill.startsWith("Jest") ? <SiJest /> : ""}</span><span className="text-lg font-normal">{skill}</span></div>
             )  
           })}
           </div>

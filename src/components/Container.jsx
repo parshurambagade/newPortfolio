@@ -8,7 +8,7 @@ import MobileNav from './MobileNav'
 
 const Container = () => {
   return (
-    <div className="flex xs:px-4 xs:flex-col xs:w-full xs:overflow-auto xs:pb-28 sm:px-6 md:px-12  lg:px-20 lg:flex lg:flex-row lg:justify-between  bg-gradient-to-r from-[#021934] from-10% via-black via-40% to-[#021934] to-90%  text-slate-400 lg:w-full ">   
+    <div className="flex xs:px-5 xs:flex-col xs:w-full xs:overflow-auto xs:pb-28 sm:px-7 md:px-12  lg:px-20 lg:flex lg:flex-row lg:justify-between  xl:gap-8 bg-gradient-to-r from-[#021934] from-10% via-black via-40% to-[#021934] to-90%  text-slate-400 lg:w-full ">   
     <div className="lg:hidden">  
       <MobileNav />   
     </div>

@@ -9,13 +9,13 @@ const Home = () => {
   const [activeNav, setActiveNav] = useState("#about");
 
   return (
-    <section id="home" className="xs:text-center  xs:px-2 xs:pt-24 xs:pb-0 md:pt-32 lg:text-left  xs:h-max xs:w-full xs:flex xs:flex-col xs:p-0 xs:gap-8 xs:justify-center xs:items-center lg:w-[35%] lg:h-[100vh] lg:justify-evenly lg:items-start lg:pt-0 lg:z-10 lg:gap-12 lg:fixed  ">
+    <section id="home" className="xs:text-center  xs:px-2 xs:pt-24 xs:pb-0 md:pt-32 lg:text-left  xs:h-max xs:w-full xs:flex xs:flex-col xs:p-0 xs:gap-8 xs:justify-center xs:items-center lg:w-[35%] lg:h-[100vh] lg:justify-evenly lg:items-start lg:pt-0 lg:pr-8 lg:z-10 lg:gap-12 lg:fixed  ">
     <div className='flex flex-col gap-7 xs:gap-4 lg:gap-2 xs:h-max'>
       <div className="font-bold flex xs:leading-8 xs:gap-2 gap-4 flex-col">
-        <h5 className="xs:text-lg md:text-2xl lg:text-3xl">Hey👋 I am</h5>
-        <h2 className="xs:text-[2.5rem] xs:leading-10 md:text-5xl  lg:text-6xl text-blue-400" >Parshuram Bagade</h2>
+        <h5 className="xs:text-lg md:text-2xl">Hey👋 I am</h5>
+        <h2 className="xs:text-[2.5rem] xs:leading-10 md:text-5xl  text-blue-400" >Parshuram Bagade</h2>
         <div className='roles xs:my-2 font-normal'>
-          <span id="heading-1" className="xs:text-lg md:text-2xl lg:text-3xl text-white" >
+          <span id="heading-1" className="xs:text-lg md:text-2xl text-white" >
             <Typewriter
               words={['Fullstack Developer', 'JavaScript Developer', 'Freelance Web Developer', 'ReactJS Developer', 'MERN Developer']}
               loop={true}
@@ -50,7 +50,7 @@ const Home = () => {
     </div>
 
       {/*Socials go here*/}
-      <div className="socials xs:w-full xs:flex xs:justify-center  ">
+      <div className="socials xs:w-full xs:flex xs:justify-center xl:justify-start ">
         <HomeSocials/>
       </div>
     
