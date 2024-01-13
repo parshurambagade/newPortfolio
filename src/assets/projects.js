@@ -27,7 +27,7 @@ const Projects = {
         "img": friendBookImg,
         "type": "Fullstack",
         "desc": [
-          "Used React Query to fetch user data and posts f      rom API",
+          "Used React Query to fetch user data and posts from API",
           "Used JSON Web Token (JWT) and Cookies for authentication",
           "Used React Context API for implementing dark mode functionality"
         ],
