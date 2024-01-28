@@ -1,10 +1,46 @@
 import portfolioImg from "../assets/img/portfolioImg.png";
 import friendBookImg from "../assets/img/friendBookImg.png";
 import speedyEatsImg from "../assets/img/speedy-eats.png";
+import travelAdvisorImg from "../assets/img/travelAdvisorImg.png";
+import videoX from "../assets/img/videoX.png";
 const Projects = {
     "data": [
       {
         "id": 1,
+        "title": "VideoX",
+        "subtitle": "Dynamic Video Discovery Platform",
+        "img": videoX,
+        "type": "Frontend",
+        "desc": [
+          "Integrated YouTube's live API for real-time data updates.",
+          "Implemented features such as search, video playback, and auto-suggestion.",
+          "Optimized performance with Redux caching and debouncing in the search bar."
+        ],
+        "liveUrl": "https://euphonious-paletas-bdb716.netlify.app/",
+        "codeUrl": "https://github.com/parshurambagade/youtube",
+        "techstack": [
+          "ReactJS", "Tailwind CSS", "Redux Toolkit", "HTML", "JavaScript", "CSS"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Travel Advisor",
+        "subtitle": "Location Based Web App",
+        "img": travelAdvisorImg,
+        "type": "Frontend",
+        "desc": [
+          "Built a ReactJS app using the Travel-Advisor API for nearby places.",
+          "Utilized Axios for data retrieval and React-Google-Maps API for interactive map display.",
+          "Styled the app with Sass and deployed it on Firebase for online accessibility.",
+        ],
+        "liveUrl": "https://travel-advisor-925c7.web.app/",
+        "codeUrl": "https://github.com/parshurambagade/travel-advisor",
+        "techstack": [
+          "React.js", "Sass", "HTML", "JavaScript", "CSS", "Firebase"
+        ]
+      },
+      {
+        "id": 3,
         "title": "Speedy-Eats",
         "subtitle": "Food Delivery Web App",
         "img": speedyEatsImg,
@@ -21,7 +57,7 @@ const Projects = {
         ]
       },
       {
-        "id": 2,
+        "id": 3,
         "title": "FriendBook",
         "subtitle": "Social Media Website",
         "img": friendBookImg,
@@ -37,7 +73,7 @@ const Projects = {
         ]
       },
       {
-        "id": 3,
+        "id": 4,
         "title": "Portfolio",
         "subtitle": "Personal Portfolio Website",
         "img": portfolioImg ,
