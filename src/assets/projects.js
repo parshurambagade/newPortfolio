@@ -51,6 +51,7 @@ const Projects = {
           "Used Redux Toolkit for 'Add to Cart' feature.",
           "Integrated Shimmer UI and search feature."
         ],
+        "liveUrl": "https://beautiful-moxie-0868a4.netlify.app/",
         "codeUrl": "https://github.com/parshurambagade/speedy-eats",
         "techstack": [
           "ReactJS", "Tailwind CSS", "Redux Toolkit", "HTML", "JavaScript", "CSS"
