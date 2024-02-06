@@ -13,7 +13,7 @@ const About = () => {
         </div>
 
         <div className='about-text xs:text-base xs:text-justify xs:tracking-normal sm:text-lg md:text-xl lg:text-xl lg:tracking-wider' >
-          <p>Hello, I'm <span className="text-white">Parshuram Bagade</span>, a driven self-taught <span className="text-white">Fronend Developer</span> hailing from Sangli, Maharashtra. My journey into web development began with a specialization in <span className="text-white">ReactJS</span>, and I've since broadened my skill set to encompass an array of technologies.</p>
+          <p>Hello, I'm <span className="text-white">Parshuram Bagade</span>, a driven self-taught <span className="text-white">Frontend Developer</span> hailing from Sangli, Maharashtra. My journey into web development began with a specialization in <span className="text-white">ReactJS</span>, and I've since broadened my skill set to encompass an array of technologies.</p>
           <br />
           <p>I recently graduated with a <span className="text-white">BCA</span> degree in 2023 and am currently pursuing my <span className="text-white">MCA</span> through online mode at <span>Uttaranchal University, Dehradun</span>. This academic pursuit has provided me with a solid foundation in computer science, which I apply to my development work.</p>
           <br />
