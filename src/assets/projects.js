@@ -1,10 +1,28 @@
-import portfolioImg from "../assets/img/portfolioImg.png";
+import portfolioImg from "../assets/img/portfolio.gif";
 import friendBookImg from "../assets/img/friendBookImg.png";
-import speedyEatsImg from "../assets/img/speedy-eats.png";
-import travelAdvisorImg from "../assets/img/travelAdvisorImg.png";
-import videoX from "../assets/img/videoX.png";
+import speedyEatsImg from "../assets/img/speedyEats.gif";
+import travelAdvisorImg from "../assets/img/travelAdvisor.gif";
+import videoX from "../assets/img/videoX.gif";
+import netflixGpt from "../assets/img/netflixGpt.gif";
 const Projects = {
     "data": [
+      {
+        "id": 0,
+        "title": "NetflixGPT",
+        "subtitle": "Movie Recommendation Platform",
+        "img": netflixGpt,
+        "type": "Frontend",
+        "desc": [
+          "Integrated GPT's API for movie recommendations based on user queries.",
+          "Implemented user authentication and form validation using Firebase.",
+          "Utilized Redux Toolkit for state management and memoization to optimize performance."
+        ],
+        "liveUrl": "https://flix-gpt.vercel.app/",
+        "codeUrl": "https://github.com/parshurambagade/netflix",
+        "techstack": [
+          "ReactJS", "Tailwind CSS", "Redux Toolkit", "Firebase", "HTML", "JavaScript", "CSS"
+        ]
+      },
       {
         "id": 1,
         "title": "VideoX",

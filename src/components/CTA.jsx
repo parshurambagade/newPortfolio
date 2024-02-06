@@ -1,7 +1,7 @@
 import React from 'react'
 // import "./cta.scss"
 // import resume from "../../../img/Resume.pdf"s
-const resume = "https://bit.ly/parshuram-resume";
+const resume = "https://bit.ly/parshu-resume";
 
 const CTA = () => {
   return (
